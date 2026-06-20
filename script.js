@@ -1,14 +1,3 @@
-/* =========================================================
-   📄 FICHIER : script.js
-   Ce fichier gère :
-   - le message de bienvenue
-   - la progression de l'utilisateur (sauvegardée dans le navigateur)
-   - le déblocage des leçons
-   - le système de quiz
-   - l'exécution du code Python directement dans le navigateur (Pyodide)
-========================================================= */
-
-
 /* =========================
    👋 MESSAGE DE BIENVENUE
 ========================= */
@@ -120,11 +109,18 @@ function finishQuiz(nextLessonNumber) {
     alert("❗ Tu dois réussir toutes les questions !");
     return;
   }
+
   if (nextLessonNumber === "fin"){
+    // ✅ CORRECTION : on sauvegarde aussi la progression avant la page finale
+    setProgress(9999); // un grand nombre = tout est débloqué
     //redirection vers fin.html
     window.location.href = "fin.html";
   }
   else{
+    // ✅ CORRECTION : on sauvegarde la progression AVANT de rediriger
+    // Sans cette ligne, checkAccess() de la prochaine leçon bloque tout le temps
+    setProgress(nextLessonNumber);
+
     //sinon prochaine lecon normale
     window.location.href = "lecon" + nextLessonNumber + ".html";
   }
@@ -145,35 +141,11 @@ function finishCourse() {
   // Aller à la page finale
   window.location.href = "fin.html";
 }
-
-/* =========================================================
-   🐍 EXÉCUTION DE CODE PYTHON (PYODIDE)
-   ⚠️ CORRECTION : avant, la ligne "loadPyodide()" se lançait
-   automatiquement dès que script.js était chargé, MÊME sur des
-   pages qui n'ont pas la librairie Pyodide (comme index.html
-   ou fin.html). Résultat : une erreur JavaScript apparaissait
-   dans la console sur toutes les pages sans bloc de code.
-   Maintenant, Pyodide ne se charge que la première fois qu'on
-   clique sur "Exécuter", et seulement si la librairie est bien
-   présente sur la page.
-========================================================= */
-
-// 🔹 Variable qui contiendra Pyodide une fois chargé (vide au départ)
-let pyodideReady = null;
+// 🔹 Charger Python dans le navigateur (une seule fois)
+let pyodideReady = loadPyodide();
 
 // 🔹 Fonction appelée quand on clique sur "Run"
 async function runCode(button) {
-
-    // 🔹 On vérifie que la librairie Pyodide est bien chargée sur cette page
-    if (typeof loadPyodide === "undefined") {
-        alert("⚠️ Pyodide n'est pas disponible sur cette page.");
-        return;
-    }
-
-    // 🔹 On charge Pyodide seulement la première fois (et pas à chaque clic)
-    if (!pyodideReady) {
-        pyodideReady = loadPyodide();
-    }
 
     // 🔹 Attendre que Pyodide soit prêt
     let pyodide = await pyodideReady;
