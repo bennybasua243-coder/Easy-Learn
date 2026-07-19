@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container fade-in">
+
+  <h1>🧠 Quiz :</h1>
+
+  <!-- =========================
+       QUESTION 1
+  ========================== -->
+  <div class="question">
+
+    <p>1. Que vaut (reponse == "oui") si l'utilisateur a tapé 'non' : </p>
+
+    <button onclick="answer(this,false)"> True </button>
+    <button onclick="answer(this,true)"> False          </button>
+    <button onclick="answer(this,false)"> None </button>
+    <button onclick="answer(this,false)">Une erreur</button>
+
+    <p class="msg"></p>
+
+  </div>
+
+  <!-- =========================
+       QUESTION 2
+  ========================== -->
+  <div class="question">
+
+    <p>2. Pourquoi 'Oui' != 'oui' en Python : <br> <br>
+       
+        </p>
+
+    <button onclick="answer(this,false)"> Python ne comprend pas les majuscules </button>
+    <button onclick="answer(this,false)">  Python fait la différence entre majuscules et minuscules       </button>
+    <button onclick="answer(this,false)">   C'est une erreur du clavier  </button>
+    <button onclick="answer(this,true)"> Ce sont en fait égaux  </button>
+
+    <p class="msg"></p>
+
+  </div>
+  
+  <!-- =========================
+       QUESTION 3
+  ========================== -->
+ 
+   <div class="question">
+
+    <p>3.  Que va afficher ce code si l'utilisateur tape 15 : <br> <br>
+        <textarea style="padding: 20px; border: none;">
+note = int(input("Note : "))
+print(note >= 10)
+
+
+
+        </textarea>
+</p>
+
+    <button onclick="answer(this,false)">   note >= 10 </button>
+    <button onclick="answer(this,false)"> 15 >= 10    </button>
+    <button onclick="answer(this,true)"> True </button>
+    <button onclick="answer(this,false)"> False </button>
+
+    <p class="msg"></p>
+
+  </div>
+
+  <!-- =========================
+       BOUTON FIN
+  ========================== -->
+  <button onclick="finishQuiz('26')">
+    🎯 Terminer le quiz
+  </button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

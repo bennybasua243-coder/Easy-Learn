@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leçon 21</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="checkAccess('21')">
+
+<div class="container fade-in">
+
+  <h1>XXI. Les fonctions</h1>
+
+  <h2>Explication :</h2>
+  <p>
+Une fonction est un bloc de code réutilisable, qu'on peut appeler autant de fois qu'on veut sans le réécrire à chaque fois. Tu en as déjà utilisé : print() est une fonction ! <br>
+    <br>
+On crée une fonction avec le mot-clé <strong style="color: aqua;">def</strong>, suivi du nom de la fonction et de parenthèses. Pour l'utiliser, on l'appelle ensuite par son nom.
+    <h3>Exemple :</h3>
+    <span style="color: aqua;"> Ecrivez votre propre code et testez le en cliquant sur Run.</span>
+        <br>
+        <br>
+        <!--  Bloc d'un exemple Python -->
+<div class="bloc-code">
+
+    <!-- Zone où l'utilisateur voit/modifie le code -->
+    <textarea class="code">
+def direBonjour():
+    print("Bonjour La Fasi !")
+ 
+direBonjour()   # appelle la fonction
+direBonjour()   # on peut la rappeler autant de fois qu'on veut
+
+    </textarea>
+
+    <!-- Bouton pour exécuter le code -->
+    <button onclick="runCode(this)">Run</button>
+
+    <!-- Zone où le résultat va s'afficher -->
+    <pre class="output">Résultat ici...</pre>
+
+</div>  
+addition(a, b) reçoit deux paramètres a et b. return a + b renvoie leur somme, qu'on récupère ensuite dans la variable resultat.</p>
+   <br>
+
+   <h3>Exercice</h3>
+   <p>
+Crée une fonction multiplier(a, b) qui retourne le produit de a et b, puis affiche le résultat de multiplier(3, 6).  </p>
+   <br>
+<br> 
+  <button class="btn" onclick="goToQuiz('quiz21')">
+    Continuer vers le quiz
+  </button>
+
+</div>
+<script src="https://cdn.jsdelivr.net/pyodide/v0.23.4/full/pyodide.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>

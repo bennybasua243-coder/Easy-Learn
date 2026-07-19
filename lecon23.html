@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leçon 23</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="checkAccess('23')">
+
+<div class="container fade-in">
+
+  <h1>XXIII. La fonction input() — Saisie de texte</h1>
+
+  <h2>Explication :</h2>
+  <p>
+Jusqu'ici, les valeurs de tes variables étaient écrites directement dans le code. Avec <strong>input()</strong> , c'est L'UTILISATEUR qui tape lui-même une valeur pendant l'exécution du programme.    <br>
+<br>
+input() affiche un message à l'écran et attend que l'utilisateur tape quelque chose puis appuie sur Entrée.
+<h3>Exemple :</h3>
+    <span style="color: aqua;"> Pour le moment, cette plateforme ne prend pas en charge les programmes utilisant input(). Cela signifie qu’il n’est pas encore possible de saisir des informations au clavier pendant l’exécution d’un programme Python.</span>
+        <br>
+        <br>
+        <!--  Bloc d'un exemple Python -->
+<div class="bloc-code">
+
+    <!-- Zone où l'utilisateur voit/modifie le code -->
+    <textarea class="code">
+# Saisie d'un prénom
+prenom = input("Entre ton prénom : ")
+print("Bonjour " + prenom + " !")
+ 
+# Saisie d'une ville
+ville = input("Ta ville : ")
+print("Tu habites à " + ville)
+
+    </textarea>
+
+    
+
+</div>  
+Quand Python exécute <strong>input("Entre ton prénom : ")</strong>, il affiche ce texte et attend. Tout ce que l'utilisateur tape est stocké dans la variable prenom.</p>
+   <br>
+
+   Cette fonctionnalité sera ajoutée dans une prochaine mise à jour de la plateforme. Merci de votre compréhension !
+   <br>
+<br> 
+  <button class="btn" onclick="goToQuiz('quiz23')">
+    Continuer vers le quiz
+  </button>
+
+</div>
+<script src="https://cdn.jsdelivr.net/pyodide/v0.23.4/full/pyodide.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>

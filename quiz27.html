@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container fade-in">
+
+  <h1>🧠 Quiz :</h1>
+
+  <!-- =========================
+       QUESTION 1
+  ========================== -->
+  <div class="question">
+
+    <p>1. Qu'est-ce qu'une valeur par défaut dans une fonction : </p>
+
+    <button onclick="answer(this,false)"> Une valeur obligatoire à fournir </button>
+    <button onclick="answer(this,true)"> Une valeur utilisée si on ne fournit pas d'argument pour ce paramètre  </button>
+    <button onclick="answer(this,false)">   La valeur que return renvoie </button>
+    <button onclick="answer(this,false)">.  Le nom du paramètre</button>
+
+    <p class="msg"></p>
+
+  </div>
+
+  <!-- =========================
+       QUESTION 2
+  ========================== -->
+  <div class="question">
+
+    <p>2. Que va afficher ce code : <br> <br>
+<textarea style="padding: 10px; border: none;">
+def f(nom, salut="Bonjour"):
+    print(salut + " " + nom)
+f("Ali")
+        </textarea>      
+        </p>
+
+    <button onclick="answer(this,false)"> Ali</button>
+    <button onclick="answer(this,false)"> Bonjour Ali       </button>
+    <button onclick="answer(this,false)"> salut Ali </button>
+    <button onclick="answer(this,true)"> Une erreur  </button>
+
+    <p class="msg"></p>
+
+  </div>
+  
+  <!-- =========================
+       QUESTION 3
+  ========================== -->
+ 
+   <div class="question">
+
+    <p>3.  Laquelle de ces définitions est INCORRECTE en Python :
+    
+</p>
+
+    <button onclick="answer(this,false)">   def f(a, b=2): </button>
+    <button onclick="answer(this,false)"> def f(a=1, b=2):  </button>
+    <button onclick="answer(this,true)"> def f(a=1, b):    </button>
+    <button onclick="answer(this,false)">def f(a, b, c=3):</button>
+
+    <p class="msg"></p>
+
+  </div>
+
+  <!-- =========================
+       BOUTON FIN
+  ========================== -->
+  <button onclick="finishQuiz('fin')">
+    🎯 Terminer le quiz
+  </button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

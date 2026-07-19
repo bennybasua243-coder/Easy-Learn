@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container fade-in">
+
+  <h1>🧠 Quiz :</h1>
+
+  <!-- =========================
+       QUESTION 1
+  ========================== -->
+  <div class="question">
+
+    <p>1. Comment écrit-on une liste en Python :</p>
+
+    <button onclick="answer(this,false)"> ( ) </button>
+    <button onclick="answer(this,false)"> { } </button>
+    <button onclick="answer(this,true)"> [ ]    </button>
+    <button onclick="answer(this,false)"> < ></button>
+
+    <p class="msg"></p>
+
+  </div>
+
+  <!-- =========================
+       QUESTION 2
+  ========================== -->
+  <div class="question">
+
+    <p>2. Quel est l'index du PREMIER élément d'une liste :
+        </p>
+
+    <button onclick="answer(this,false)"> 1 </button>
+    <button onclick="answer(this,false)"> -1 </button>
+    <button onclick="answer(this,false)"> ça dépend  </button>
+    <button onclick="answer(this,true)"> 0 </button>
+
+    <p class="msg"></p>
+
+  </div>
+  
+  <!-- =========================
+       QUESTION 3
+  ========================== -->
+ 
+   <div class="question">
+
+    <p>3.  Quelle fonction permet de connaître le nombre d'éléments d'une liste :
+</p>
+
+    <button onclick="answer(this,false)"> count() </button>
+    <button onclick="answer(this,true)"> len() </button>
+    <button onclick="answer(this,false)"> size() </button>
+    <button onclick="answer(this,false)"> total() </button>
+
+    <p class="msg"></p>
+
+  </div>
+
+  <!-- =========================
+       BOUTON FIN
+  ========================== -->
+  <button onclick="finishQuiz('19')">
+    🎯 Terminer le quiz
+  </button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

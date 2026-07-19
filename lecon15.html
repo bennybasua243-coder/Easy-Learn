@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leçon 15</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="checkAccess('15')">
+
+<div class="container fade-in">
+
+  <h1>XV. Les Opérateurs de comparaison</h1>
+
+  <h2>Explication :</h2>
+  <p>
+Les opérateurs de comparaison permettent de comparer deux valeurs entre elles. Le résultat est toujours un booléen (True ou False).  </p>
+    <span style="padding-right: 330px;">•	<strong style="color: aqua;">==</strong> → égal à <br></span>
+    <span style="padding-right: 310px;">•	<strong style="color: aqua;">!= </strong> → différent de <br></span>
+    <span style="padding-right: 315px;">•	<strong style="color: aqua;">> </strong> → supérieur à <br></span>
+    <span style="padding-right: 320px;">•	<strong style="color: aqua;"> 	< </strong> → inférieur à <br></span>
+    <span style="padding-right: 245px;">•	<strong style="color: aqua;">>=</strong> → supérieur ou égal à <br></span>
+    <span style="padding-right: 250px;">•	<strong style="color: aqua;"> <= </strong> → inférieur ou égal à <br></span>
+    <span>Attention à ne pas confondre <strong style="color: aqua;">=</strong>(qui sert à donner une valeur à une variable) avec <strong style="color: aqua;">==</strong> (qui sert à comparer deux valeurs) !</span>
+
+    
+    <h3>Exemple :</h3>
+    <span style="color: aqua;">Ecrivez votre propre code et testez le en cliquant sur Run.
+        <br>
+        <br>
+        <!--  Bloc d'un exemple Python -->
+<div class="bloc-code">
+
+    <!-- Zone où l'utilisateur voit/modifie le code -->
+    <textarea class="code">
+age = 17
+print(age == 18)  # False
+print(age != 18)  # True
+print(age < 18)   # True
+print(age >= 17)  # True
+
+    </textarea>
+
+    <!-- Bouton pour exécuter le code -->
+    <button onclick="runCode(this)">Run</button>
+
+    <!-- Zone où le résultat va s'afficher -->
+    <pre class="output">Résultat ici...</pre>
+
+</div>  
+    
+ 
+  </p>
+   <br>
+  <button class="btn" onclick="goToQuiz('quiz15')">
+    Continuer vers le quiz
+  </button>
+
+</div>
+<script src="https://cdn.jsdelivr.net/pyodide/v0.23.4/full/pyodide.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>

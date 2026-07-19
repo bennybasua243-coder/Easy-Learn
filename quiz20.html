@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container fade-in">
+
+  <h1>🧠 Quiz :</h1>
+
+  <!-- =========================
+       QUESTION 1
+  ========================== -->
+  <div class="question">
+
+    <p>1. La boucle while répète un code :</p>
+
+    <button onclick="answer(this,false)"> Un nombre de fois fixe </button>
+    <button onclick="answer(this,false)"> Une seule fois</button>
+    <button onclick="answer(this,true)"> Tant qu'une condition est vraie      </button>
+    <button onclick="answer(this,false)"> Jamais</button>
+
+    <p class="msg"></p>
+
+  </div>
+
+  <!-- =========================
+       QUESTION 2
+  ========================== -->
+  <div class="question">
+
+    <p>2. Que risque de se passer si on oublie de modifier la variable de la condition :
+        </p>
+
+    <button onclick="answer(this,false)"> Le programme s'arrête immédiatement </button>
+    <button onclick="answer(this,false)">  if </button>
+    <button onclick="answer(this,false)">  Une erreur de syntaxe </button>
+    <button onclick="answer(this,true)">Rien, c'est normal  </button>
+
+    <p class="msg"></p>
+
+  </div>
+  
+  <!-- =========================
+       QUESTION 3
+  ========================== -->
+ 
+   <div class="question">
+
+    <p>3.  Que va afficher ce code : <br> <br>
+        <textarea style="padding: 10px; border: none;">
+Que fait compteur += 1 :
+        </textarea>
+</p>
+
+    <button onclick="answer(this,false)"> Diminue compteur de 1 </button>
+    <button onclick="answer(this,true)"> Augmente compteur de 1    </button>
+    <button onclick="answer(this,false)"> Affiche compteur </button>
+    <button onclick="answer(this,false)"> Multiplie compteur par 1 </button>
+
+    <p class="msg"></p>
+
+  </div>
+
+  <!-- =========================
+       BOUTON FIN
+  ========================== -->
+  <button onclick="finishQuiz('21')">
+    🎯 Terminer le quiz
+  </button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

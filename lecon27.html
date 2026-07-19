@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leçon 27</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="checkAccess('27')">
+
+<div class="container fade-in">
+
+  <h1>XXVII. Fonctions — Ajouter un paramètre à droite (valeur par défaut) </h1>
+
+  <h2>Explication :</h2>
+  <p>
+Ajouter un paramètre À DROITE (en dernier) est la façon la plus sûre d'étendre une fonction existante, surtout si on lui donne une valeur par défaut.
+<br>
+Une valeur par défaut permet à la fonction de fonctionner même si on ne fournit pas ce paramètre. On l'écrit avec = dans la définition.
+
+<h3>Exemple :</h3>
+    <span style="color: aqua;"> Ecrivez votre propre code et testez le en cliquant sur Run.</span>
+        <br>
+        <br>
+        <!--  Bloc d'un exemple Python -->
+<div class="bloc-code">
+
+    <!-- Zone où l'utilisateur voit/modifie le code -->
+    <textarea class="code">
+# Version de base
+def saluer(prenom):
+    print("Bonjour " + prenom + " !")
+ 
+# On ajoute 'ponctuation' À DROITE avec une valeur par défaut
+def saluer(prenom, ponctuation="!"):
+    print("Bonjour " + prenom + " " + ponctuation)
+ 
+# Appel SANS le nouveau paramètre (utilise la valeur par défaut)
+saluer("Benny")           # Bonjour Benny !
+ 
+# Appel AVEC le nouveau paramètre (on choisit soi-même)
+saluer("Benny", ".")      # Bonjour Benny .
+saluer("Baswa", "!!!")    # Bonjour Baswa !!!
+ 
+# Autre exemple : ajouter un multiplicateur
+def calculer(a, b, facteur=1):
+    return (a + b) * facteur
+ 
+print(calculer(3, 4))       # 7  (facteur=1 par défaut)
+print(calculer(3, 4, 2))    # 14 (facteur=2)
+
+
+    </textarea>
+
+    <!-- Bouton pour exécuter le code -->
+    <button onclick="runCode(this)">Run</button>
+
+    <!-- Zone où le résultat va s'afficher -->
+    <pre class="output">Résultat ici...</pre>
+
+</div>  
+La valeur par défaut est utilisée UNIQUEMENT si on ne fournit pas de valeur lors de l'appel. Si on en fournit une, elle remplace la valeur par défaut.<br>
+
+<strong>Règle en Python :</strong> les paramètres avec valeur par défaut doivent TOUJOURS être placés après les paramètres sans valeur par défaut. def f(a=1, b) est une erreur. def f(b, a=1) est correct.<br>
+
+</p>
+   <br>
+
+   <h3>Exercice</h3>
+   <p>Crée une fonction afficherMessage(texte, majuscules=False). Si majuscules vaut True, affiche le texte en majuscules avec texte.upper(). Sinon affiche-le normalement. Teste les deux cas.</p>
+   <br>
+<br> 
+  <button class="btn" onclick="goToQuiz('quiz26')">
+    Continuer vers le quiz
+  </button>
+
+</div>
+<script src="https://cdn.jsdelivr.net/pyodide/v0.23.4/full/pyodide.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>

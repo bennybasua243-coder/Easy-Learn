@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container fade-in">
+
+  <h1>🧠 Quiz :</h1>
+
+  <!-- =========================
+       QUESTION 1
+  ========================== -->
+  <div class="question">
+
+    <p>1. Quel mot-clé signifie "sinon si" :</p>
+
+    <button onclick="answer(this,false)">if</button>
+    <button onclick="answer(this,false)"> and </button>
+    <button onclick="answer(this,true)"> elif </button>
+    <button onclick="answer(this,false)">else</button>
+
+    <p class="msg"></p>
+
+  </div>
+
+  <!-- =========================
+       QUESTION 2
+  ========================== -->
+  <div class="question">
+
+    <p>2. Qu'est-ce qui est obligatoire avant le code d'un bloc if en Python :
+        </p>
+
+    <button onclick="answer(this,false)"> Un point-virgule </button>
+    <button onclick="answer(this,false)"> Des accolades { } </button>
+    <button onclick="answer(this,false)"> Rien du tout </button>
+    <button onclick="answer(this,true)"> Une indentation (espaces) </button>
+
+    <p class="msg"></p>
+
+  </div>
+  
+  <!-- =========================
+       QUESTION 3
+  ========================== -->
+ 
+   <div class="question">
+
+    <p>3.  Que va afficher ce code : <br> <br>
+      <textarea style="padding: 30px; border: none;">
+x = 5
+if x > 10:
+    print("grand")
+else:
+    print("petit")
+
+      </textarea>
+  
+</p>
+
+    <button onclick="answer(this,false)">  grand </button>
+    <button onclick="answer(this,true)"> petit </button>
+    <button onclick="answer(this,false)">Une erreur </button>
+    <button onclick="answer(this,false)"> Rien </button>
+
+    <p class="msg"></p>
+
+  </div>
+
+  <!-- =========================
+       BOUTON FIN
+  ========================== -->
+  <button onclick="finishQuiz('18')">
+    🎯 Terminer le quiz
+  </button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leçon 16</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="checkAccess('16')">
+
+<div class="container fade-in">
+
+  <h1>XVI. Les Opérateurs logiques</h1>
+
+  <h2>Explication :</h2>
+  <p>
+Les opérateurs logiques permettent de combiner plusieurs conditions (booléennes) ensemble. Il y en a trois :  </p>
+    <span style="padding-right: 40px;">•	<strong style="color: aqua;">	and </strong>→ True seulement si LES DEUX conditions sont vraies<br></span>
+    <span style="padding-right: 75px;">•	<strong style="color: aqua;">or </strong>  → True si AU MOINS UNE des conditions est vraie <br></span>
+    <span style="padding-right: 15px;">•	<strong style="color: aqua;">> not</strong> → inverse la valeur (True devient False et inversement) <br></span>
+    <br> and est comme un <strong style="color: aqua;">"ET"</strong> en français : il faut que TOUT soit vrai. or est comme un <strong style="color: aqua;">"OU"</strong> : il suffit qu'une seule chose soit vraie.
+    <h3>Exemple :</h3>
+    <span style="color: aqua;">Ecrivez votre propre code et testez le en cliquant sur Run.
+        <br>
+        <br>
+        <!--  Bloc d'un exemple Python -->
+<div class="bloc-code">
+
+    <!-- Zone où l'utilisateur voit/modifie le code -->
+    <textarea class="code">
+age = 17
+aCarteIdentite = True
+ 
+print(age >= 18 and aCarteIdentite)  # False
+print(age >= 18 or aCarteIdentite)   # True
+print(not aCarteIdentite)            # False
+
+
+    </textarea>
+
+    <!-- Bouton pour exécuter le code -->
+    <button onclick="runCode(this)">Run</button>
+
+    <!-- Zone où le résultat va s'afficher -->
+    <pre class="output">Résultat ici...</pre>
+
+</div>  
+    
+ 
+  </p>
+   <br>
+  <button class="btn" onclick="goToQuiz('quiz16')">
+    Continuer vers le quiz
+  </button>
+
+</div>
+<script src="https://cdn.jsdelivr.net/pyodide/v0.23.4/full/pyodide.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>

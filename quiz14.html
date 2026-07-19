@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container fade-in">
+
+  <h1>🧠 Quiz :</h1>
+
+  <!-- =========================
+       QUESTION 1
+  ========================== -->
+  <div class="question">
+
+    <p>1. Quel opérateur permet de faire une division entière (sans virgule) :</p>
+
+    <button onclick="answer(this,false)">/</button>
+    <button onclick="answer(this,false)">**</button>
+    <button onclick="answer(this,true)">//</button>
+    <button onclick="answer(this,false)">%</button>
+
+    <p class="msg"></p>
+
+  </div>
+
+  <!-- =========================
+       QUESTION 2
+  ========================== -->
+  <div class="question">
+
+    <p>2. — Que va afficher : print(7 % 2) : 
+        </p>
+
+    <button onclick="answer(this,true)"> 1 </button>
+    <button onclick="answer(this,false)">3.5</button>
+    <button onclick="answer(this,false)">2</button>
+    <button onclick="answer(this,false)">14</button>
+
+    <p class="msg"></p>
+
+  </div>
+  
+  <!-- =========================
+       QUESTION 3
+  ========================== -->
+ 
+   <div class="question">
+
+    <p>3. Que va afficher : print(2 ** 3) : </p>
+
+    <button onclick="answer(this,false)"> 6 </button>
+    <button onclick="answer(this,true)">8 </button>
+    <button onclick="answer(this,false)">23</button>
+    <button onclick="answer(this,false)">5</button>
+
+    <p class="msg"></p>
+
+  </div>
+
+  <!-- =========================
+       BOUTON FIN
+  ========================== -->
+  <button onclick="finishQuiz('15')">
+    🎯 Terminer le quiz
+  </button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

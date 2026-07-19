@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leçon 14</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="checkAccess('14')">
+
+<div class="container fade-in">
+
+  <h1>XIV. Les Opérateurs arithmétiques</h1>
+
+  <h2>Explication :</h2>
+  <p>
+    Les opérateurs arithmétiques permettent de faire des calculs en Python, comme une calculatrice. Voici les principaux :
+  </p>
+    <span style="padding-right: 250px;">•	<strong style="color: aqua;">+</strong> → addition <br></span>
+    <span style="padding-right: 231px;">•	<strong style="color: aqua;">-</strong> → soustraction <br></span>
+    <span style="padding-right: 223px;">•	<strong style="color: aqua;">*</strong> → multiplication <br></span>
+    <span style="padding-right: 85px;">•	<strong style="color: aqua;">/</strong> → division (donne toujours un float) <br></span>
+    •	<strong style="color: aqua;">//</strong> → division entière (donne un int, sans le reste) <br>
+    <span style="padding-right: 40px;">•	<strong style="color: aqua;">%</strong> → modulo (donne le reste d'une division) <br></span>
+    <span style="padding-right: 230px;">•	<strong style="color: aqua;">**</strong> → puissance</span>
+
+    
+    <h3>Exemple :</h3>
+    <span style="color: aqua;">Ecrivez votre propre code et testez le en cliquant sur Run.
+        <br>
+        <br>
+        <!--  Bloc d'un exemple Python -->
+<div class="bloc-code">
+
+    <!-- Zone où l'utilisateur voit/modifie le code -->
+    <textarea class="code">
+a = 10
+b = 3
+print(a + b)   # 13
+print(a - b)   # 7
+print(a * b)   # 30
+print(a / b)   # 3.333...
+print(a // b)  # 3
+print(a % b)   # 1
+print(a ** b)  # 1000
+
+    </textarea>
+
+    <!-- Bouton pour exécuter le code -->
+    <button onclick="runCode(this)">Run</button>
+
+    <!-- Zone où le résultat va s'afficher -->
+    <pre class="output">Résultat ici...</pre>
+
+</div>  
+    
+ 
+  </p>
+   <br>
+  <button class="btn" onclick="goToQuiz('quiz14')">
+    Continuer vers le quiz
+  </button>
+
+</div>
+<script src="https://cdn.jsdelivr.net/pyodide/v0.23.4/full/pyodide.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>

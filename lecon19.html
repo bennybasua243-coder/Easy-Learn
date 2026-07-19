@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leçon 19</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="checkAccess('19')">
+
+<div class="container fade-in">
+
+  <h1>XIX. La Boucle <strong style="color: aqua;">for</strong> </h1>
+
+  <h2>Explication :</h2>
+  <p>
+Une boucle permet de répéter un bloc de code plusieurs fois, sans avoir à le réécrire. La boucle for sert à parcourir chaque élément d'une liste, ou à répéter une action un nombre précis de fois.</p>
+Avec <strong style="color: aqua;">range(n)</strong> , Python génère automatiquement une suite de nombres <strong style="color: aqua;">de 0 à n-1</strong> .
+
+<h3>Exemple :</h3>
+    <span style="color: aqua;"> Ecrivez votre propre code et testez le en cliquant sur Run.</span>
+        <br>
+        <br>
+        <!--  Bloc d'un exemple Python -->
+<div class="bloc-code">
+
+    <!-- Zone où l'utilisateur voit/modifie le code -->
+    <textarea class="code">
+fruits = ["pomme", "banane", "mangue"]
+ 
+for fruit in fruits:
+    print(fruit)
+ 
+for i in range(5):
+    print(i)   # affiche 0, 1, 2, 3, 4
+    </textarea>
+
+    <!-- Bouton pour exécuter le code -->
+    <button onclick="runCode(this)">Run</button>
+
+    <!-- Zone où le résultat va s'afficher -->
+    <pre class="output">Résultat ici...</pre>
+
+</div>  
+for fruit in fruits veut dire : "pour chaque élément de la liste fruits, donne-lui le nom fruit, et exécute le code en dessous".
+</p>
+   <br>
+
+   <h3>Exercice</h3>
+   <p>Utilise une boucle for avec range(10) pour afficher tous les nombres de 0 à 9.</p>
+   <br>
+<br> 
+  <button class="btn" onclick="goToQuiz('quiz19')">
+    Continuer vers le quiz
+  </button>
+
+</div>
+<script src="https://cdn.jsdelivr.net/pyodide/v0.23.4/full/pyodide.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>

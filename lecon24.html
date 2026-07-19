@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leçon 24</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="checkAccess('24')">
+
+<div class="container fade-in">
+
+  <h1>XXIV. La fonction input() — Saisie de nombres (int et float)</h1>
+
+  <h2>Explication :</h2>
+  <p>
+Puisque input() retourne toujours du texte (str), si l'utilisateur tape un nombre et qu'on veut faire des calculs avec, il faut d'abord le convertir avec int() ou float().<br>
+<br>
+-	int(valeur) → convertit en nombre entier
+<br>
+-	float(valeur) → convertit en nombre décimal
+
+<h3>Exemple :</h3>
+    <span style="color: aqua;"> Pour le moment, cette plateforme ne prend pas en charge les programmes utilisant input(). Cela signifie qu’il n’est pas encore possible de saisir des informations au clavier pendant l’exécution d’un programme Python.</span>
+        <br>
+        <br>
+        <!--  Bloc d'un exemple Python -->
+<div class="bloc-code">
+
+    <!-- Zone où l'utilisateur voit/modifie le code -->
+    <textarea class="code">
+# Saisie d'un entier
+age = int(input("Entre ton âge : "))
+print("Dans 10 ans tu auras :", age + 10)
+ 
+# Saisie d'un décimal
+taille = float(input("Ta taille en mètres : "))
+print("Ta taille :", taille)
+ 
+# Sans conversion (ERREUR si on essaie de calculer)
+# age = input("Âge : ")   → str, pas calculable !
+
+    </textarea>
+
+    
+
+</div>  
+Si l'utilisateur tape 17 et qu'on fait age = input(), alors age vaut '17' (texte). On ne peut pas faire age + 1. Avec age = int(input()), age vaut 17 (nombre) et age + 1 vaut 18.   <br>
+<br> <br>
+   Cette fonctionnalité sera ajoutée dans une prochaine mise à jour de la plateforme. Merci de votre compréhension !
+   <br>
+<br> 
+  <button class="btn" onclick="goToQuiz('quiz24')">
+    Continuer vers le quiz
+  </button>
+
+</div>
+<script src="https://cdn.jsdelivr.net/pyodide/v0.23.4/full/pyodide.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container fade-in">
+
+  <h1>🧠 Quiz :</h1>
+
+  <!-- =========================
+       QUESTION 1
+  ========================== -->
+  <div class="question">
+
+    <p>1. Quel mot-clé permet de créer une fonction en Python : </p>
+
+    <button onclick="answer(this,false)"> function </button>
+    <button onclick="answer(this,true)"> def   </button>
+    <button onclick="answer(this,false)"> func </button>
+    <button onclick="answer(this,false)"> create</button>
+
+    <p class="msg"></p>
+
+  </div>
+
+  <!-- =========================
+       QUESTION 2
+  ========================== -->
+  <div class="question">
+
+    <p>2. Que faut-il faire pour qu'une fonction s'exécute :
+        </p>
+
+    <button onclick="answer(this,false)"> Rien, elle s'exécute automatiquement </button>
+    <button onclick="answer(this,false)">  La déclarer deux fois</button>
+    <button onclick="answer(this,false)">  Utiliser print() devant </button>
+    <button onclick="answer(this,true)">L'appeler par son nom suivi de ( )  </button>
+
+    <p class="msg"></p>
+
+  </div>
+  
+  <!-- =========================
+       QUESTION 3
+  ========================== -->
+ 
+   <div class="question">
+
+    <p>3.  Que va afficher ce code : <br> <br>
+        <textarea style="padding: 10px; border: none;">
+def direBonjour():
+    print("Salut")
+        </textarea>
+</p>
+
+    <button onclick="answer(this,false)"> Salut </button>
+    <button onclick="answer(this,true)"> Rien, car la fonction n'est jamais appelée  </button>
+    <button onclick="answer(this,false)"> Une erreur </button>
+    <button onclick="answer(this,false)"> def direBonjour </button>
+
+    <p class="msg"></p>
+
+  </div>
+
+  <!-- =========================
+       BOUTON FIN
+  ========================== -->
+  <button onclick="finishQuiz('22')">
+    🎯 Terminer le quiz
+  </button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

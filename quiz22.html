@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container fade-in">
+
+  <h1>🧠 Quiz :</h1>
+
+  <!-- =========================
+       QUESTION 1
+  ========================== -->
+  <div class="question">
+
+    <p>1. À quoi servent les paramètres d'une fonction : </p>
+
+    <button onclick="answer(this,false)"> À donner un nom à la fonction </button>
+    <button onclick="answer(this,true)"> À recevoir des informations de l'extérieur   </button>
+    <button onclick="answer(this,false)"> À l'empêcher de s'exécuter </button>
+    <button onclick="answer(this,false)"> À créer une boucle</button>
+
+    <p class="msg"></p>
+
+  </div>
+
+  <!-- =========================
+       QUESTION 2
+  ========================== -->
+  <div class="question">
+
+    <p>2. Quel mot-clé permet à une fonction de renvoyer un résultat :
+        </p>
+
+    <button onclick="answer(this,false)"> print </button>
+    <button onclick="answer(this,false)">  send </button>
+    <button onclick="answer(this,false)">   give   </button>
+    <button onclick="answer(this,true)"> return </button>
+
+    <p class="msg"></p>
+
+  </div>
+  
+  <!-- =========================
+       QUESTION 3
+  ========================== -->
+ 
+   <div class="question">
+
+    <p>3.  Que va afficher ce code : <br> <br>
+        <textarea style="padding: 20px; border: none;">
+def addition(a, b):
+    return a + b
+
+print(addition(2, 5))
+        </textarea>
+</p>
+
+    <button onclick="answer(this,false)"> addition(2, 5) </button>
+    <button onclick="answer(this,true)"> 7 </button>
+    <button onclick="answer(this,false)"> 2 5 </button>
+    <button onclick="answer(this,false)"> Une erreur </button>
+
+    <p class="msg"></p>
+
+  </div>
+
+  <!-- =========================
+       BOUTON FIN
+  ========================== -->
+  <button onclick="finishQuiz('23')">
+    🎯 Terminer le quiz
+  </button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

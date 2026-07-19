@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leçon 22</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="checkAccess('22')">
+
+<div class="container fade-in">
+
+  <h1>XXII. Les fonctions</h1>
+
+  <h2>Explication :</h2>
+  <p>
+Une fonction peut recevoir des informations grâce à des paramètres, placés entre les parenthèses. Cela permet à la fonction de s'adapter selon ce qu'on lui donne.
+    <br>
+Une fonction peut aussi RENVOYER un résultat grâce au mot-clé <strong style="color: aqua;">return</strong> , qu'on peut ensuite stocker dans une variable ou afficher.
+    <h3>Exemple :</h3>
+    <span style="color: aqua;"> Ecrivez votre propre code et testez le en cliquant sur Run.</span>
+        <br>
+        <br>
+        <!--  Bloc d'un exemple Python -->
+<div class="bloc-code">
+
+    <!-- Zone où l'utilisateur voit/modifie le code -->
+    <textarea class="code">
+def addition(a, b):
+    return a + b
+ 
+resultat = addition(4, 7)
+print(resultat)   # 11
+ 
+def saluer(prenom):
+    print("Salut " + prenom + " !")
+ 
+saluer("Frère")   # Salut Frère !
+
+
+    </textarea>
+
+    <!-- Bouton pour exécuter le code -->
+    <button onclick="runCode(this)">Run</button>
+
+    <!-- Zone où le résultat va s'afficher -->
+    <pre class="output">Résultat ici...</pre>
+
+</div>  
+Sans la dernière ligne direBonjour(), la fonction est juste définie mais ne s'exécute jamais. Il faut toujours APPELER une fonction pour qu'elle fasse quelque chose.
+</p>
+   <br>
+
+   <h3>Exercice</h3>
+   <p>Crée une fonction appelée direMerci() qui affiche "Merci d'avoir suivi ce cours !", puis appelle-la</p>
+   <br>
+<br> 
+  <button class="btn" onclick="goToQuiz('quiz22')">
+    Continuer vers le quiz
+  </button>
+
+</div>
+<script src="https://cdn.jsdelivr.net/pyodide/v0.23.4/full/pyodide.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>

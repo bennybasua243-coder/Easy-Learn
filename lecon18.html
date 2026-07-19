@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leçon 18</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="checkAccess('18')">
+
+<div class="container fade-in">
+
+  <h1>XVIII. Les Listes </h1>
+
+  <h2>Explication :</h2>
+  <p>
+    Une liste permet de stocker PLUSIEURS valeurs dans une seule variable, dans un ordre précis. En Python, une liste s'écrit entre crochets <strong style="color: aqua;">[ ].</strong>
+</p>
+Chaque élément d'une liste a une position, appelée index.  <br><br>  <strong>Souviens toi</strong> : en Python, le premier élément a l'index 0, pas 1 !
+<h3>Exemple :</h3>
+    <span style="color: aqua;"> Ecrivez votre propre code et testez le en cliquant sur Run.</span>
+        <br>
+        <br>
+        <!--  Bloc d'un exemple Python -->
+<div class="bloc-code">
+
+    <!-- Zone où l'utilisateur voit/modifie le code -->
+    <textarea class="code">
+fruits = ["pomme", "banane", "mangue"]
+ 
+print(fruits)        # liste complète
+print(fruits[0])     # pomme
+print(fruits[1])     # banane
+print(len(fruits))   # 3 (nombre d'éléments)
+ 
+fruits.append("orange")  # ajoute un élément
+print(fruits)
+
+    </textarea>
+
+    <!-- Bouton pour exécuter le code -->
+    <button onclick="runCode(this)">Run</button>
+
+    <!-- Zone où le résultat va s'afficher -->
+    <pre class="output">Résultat ici...</pre>
+
+</div>  
+    len() donne le nombre d'éléments dans la liste. append() ajoute un nouvel élément à la fin de la liste.
+  </p>
+   <br>
+
+   <h3>Exercice</h3>
+   <p>Crée une liste de 3 villes, affiche la liste entière, puis affiche uniquement la première ville en utilisant l'index 0.</p>
+   <br>
+<br> 
+  <button class="btn" onclick="goToQuiz('quiz18')">
+    Continuer vers le quiz
+  </button>
+
+</div>
+<script src="https://cdn.jsdelivr.net/pyodide/v0.23.4/full/pyodide.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container fade-in">
+
+  <h1>🧠 Quiz :</h1>
+
+  <!-- =========================
+       QUESTION 1
+  ========================== -->
+  <div class="question">
+
+    <p>1. Qu'est-ce qu'un paramètre dans une fonction : </p>
+
+    <button onclick="answer(this,false)"> Le nom de la fonction </button>
+    <button onclick="answer(this,true)"> Une information reçue par la fonction pour travailler          </button>
+    <button onclick="answer(this,false)">   Le résultat renvoyé </button>
+    <button onclick="answer(this,false)">Un commentaire</button>
+
+    <p class="msg"></p>
+
+  </div>
+
+  <!-- =========================
+       QUESTION 2
+  ========================== -->
+  <div class="question">
+
+    <p>2. Si on définit def f(a, b) et qu'on appelle f(10, 20), que vaut a : <br> <br>
+       
+        </p>
+
+    <button onclick="answer(this,false)"> 20</button>
+    <button onclick="answer(this,false)"> 10       </button>
+    <button onclick="answer(this,false)"> a </button>
+    <button onclick="answer(this,true)"> Une erreur  </button>
+
+    <p class="msg"></p>
+
+  </div>
+  
+  <!-- =========================
+       QUESTION 3
+  ========================== -->
+ 
+   <div class="question">
+
+    <p>3.  Pourquoi faut-il mettre à jour tous les appels quand on ajoute un paramètre :
+    
+</p>
+
+    <button onclick="answer(this,false)">   Ce n'est pas nécessaire </button>
+    <button onclick="answer(this,false)"> Parce que Python compte le nombre d'arguments et affiche une erreur s'il ne correspond pas       </button>
+    <button onclick="answer(this,true)"> Pour faire plaisir au professeur </button>
+    <button onclick="answer(this,false)"> C'est automatique </button>
+
+    <p class="msg"></p>
+
+  </div>
+
+  <!-- =========================
+       BOUTON FIN
+  ========================== -->
+  <button onclick="finishQuiz('27')">
+    🎯 Terminer le quiz
+  </button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

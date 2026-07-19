@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container fade-in">
+
+  <h1>🧠 Quiz :</h1>
+
+  <!-- =========================
+       QUESTION 1
+  ========================== -->
+  <div class="question">
+
+    <p>1. Quel symbole permet de vérifier si deux valeurs sont égales :</p>
+
+    <button onclick="answer(this,false)">=</button>
+    <button onclick="answer(this,false)"><></button>
+    <button onclick="answer(this,true)">==</button>
+    <button onclick="answer(this,false)">!=</button>
+
+    <p class="msg"></p>
+
+  </div>
+
+  <!-- =========================
+       QUESTION 2
+  ========================== -->
+  <div class="question">
+
+    <p>2. Que va afficher : print(10 != 10)
+        </p>
+
+    <button onclick="answer(this,true)"> False </button>
+    <button onclick="answer(this,false)"> True </button>
+    <button onclick="answer(this,false)"> 10 </button>
+    <button onclick="answer(this,false)"> Une erreur </button>
+
+    <p class="msg"></p>
+
+  </div>
+  
+  <!-- =========================
+       QUESTION 3
+  ========================== -->
+ 
+   <div class="question">
+
+    <p>3. Que va afficher : print(5 <= 5) </p>
+
+    <button onclick="answer(this,false)"> False </button>
+    <button onclick="answer(this,true)"> True </button>
+    <button onclick="answer(this,false)">5 </button>
+    <button onclick="answer(this,false)">Une erreur</button>
+
+    <p class="msg"></p>
+
+  </div>
+
+  <!-- =========================
+       BOUTON FIN
+  ========================== -->
+  <button onclick="finishQuiz('16')">
+    🎯 Terminer le quiz
+  </button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

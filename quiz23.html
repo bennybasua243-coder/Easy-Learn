@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container fade-in">
+
+  <h1>🧠 Quiz :</h1>
+
+  <!-- =========================
+       QUESTION 1
+  ========================== -->
+  <div class="question">
+
+    <p>1. Que fait la fonction input() : </p>
+
+    <button onclick="answer(this,false)"> Affiche du texte à l'écran </button>
+    <button onclick="answer(this,true)"> Attend que l'utilisateur tape une valeur     </button>
+    <button onclick="answer(this,false)"> Crée une variable automatiquement </button>
+    <button onclick="answer(this,false)"> Calcule un résultat</button>
+
+    <p class="msg"></p>
+
+  </div>
+
+  <!-- =========================
+       QUESTION 2
+  ========================== -->
+  <div class="question">
+
+    <p>2. Quel est le type de la valeur retournée par input() :
+        </p>
+
+    <button onclick="answer(this,false)"> int </button>
+    <button onclick="answer(this,false)">  float </button>
+    <button onclick="answer(this,false)">   bool   </button>
+    <button onclick="answer(this,true)"> str (toujours du texte)    </button>
+
+    <p class="msg"></p>
+
+  </div>
+  
+  <!-- =========================
+       QUESTION 3
+  ========================== -->
+ 
+   <div class="question">
+
+    <p>3.  Que va afficher ce code si l'utilisateur tape 'Ali' : <br> <br>
+        <textarea style="padding: 20px; border: none;">
+nom = input("Ton nom : ")
+print("Salut " + nom)
+
+        </textarea>
+</p>
+
+    <button onclick="answer(this,false)"> Ton nom : Ali </button>
+    <button onclick="answer(this,true)"> Salut Ali    </button>
+    <button onclick="answer(this,false)"> Ali </button>
+    <button onclick="answer(this,false)"> Une erreur </button>
+
+    <p class="msg"></p>
+
+  </div>
+
+  <!-- =========================
+       BOUTON FIN
+  ========================== -->
+  <button onclick="finishQuiz('24')">
+    🎯 Terminer le quiz
+  </button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

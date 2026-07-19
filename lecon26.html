@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leçon 26</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="checkAccess('26')">
+
+<div class="container fade-in">
+
+  <h1>XXVI. Fonctions — Ajouter un paramètre à gauche </h1>
+
+  <h2>Explication :</h2>
+  <p>
+Quand une fonction existe déjà et qu'on veut lui ajouter une information SUPPLÉMENTAIRE à traiter, on ajoute un nouveau paramètre.<br>
+Ajouter un paramètre À GAUCHE (en premier) signifie qu'il est le premier traité. C'est logique quand cette information est la plus importante ou le 'sujet principal' de la fonction.
+
+<h3>Exemple :</h3>
+    <span style="color: aqua;"> Ecrivez votre propre code et testez le en cliquant sur Run.</span>
+        <br>
+        <br>
+        <!--  Bloc d'un exemple Python -->
+<div class="bloc-code">
+
+    <!-- Zone où l'utilisateur voit/modifie le code -->
+    <textarea class="code">
+# Version de base
+def saluer(prenom):
+    print("Bonjour " + prenom + " !")
+ 
+saluer("Benny")   # Bonjour Benny !
+ 
+# On ajoute 'titre' À GAUCHE (premier paramètre)
+def saluer(titre, prenom):
+    print("Bonjour " + titre + " " + prenom + " !")
+ 
+saluer("Dr", "Benny")    # Bonjour Dr Benny !
+saluer("M.", "Baswa")   # Bonjour M. Baswa !
+ 
+# Autre exemple : ajouter la ville en premier
+def decrire(ville, nom):
+    print(nom + " habite à " + ville)
+ 
+decrire("Kinshasa", "Ali")   # Ali habite à Kinshasa
+
+    </textarea>
+
+    <!-- Bouton pour exécuter le code -->
+    <button onclick="runCode(this)">Run</button>
+
+    <!-- Zone où le résultat va s'afficher -->
+    <pre class="output">Résultat ici...</pre>
+
+</div>  
+Quand on appelle saluer("Dr", "Benny"), Python associe titre = "Dr" et prenom = "Benny". L'ordre dans l'appel doit correspondre à l'ordre dans la définition.
+<br>
+Règle importante : si tu ajoutes un paramètre à gauche dans la définition, tu dois aussi changer TOUS les endroits où tu appelles cette fonction, en ajoutant la valeur correspondante en premier.
+<br>
+
+</p>
+   <br>
+
+   <h3>Exercice</h3>
+   <p>Prends cette fonction : def afficherNote(nom): print(nom + " a été évalué"). Ajoute un paramètre matiere à gauche pour qu'elle affiche 'En Maths, Benny a été évalué'. Appelle-la avec les bons arguments.</p>
+   <br>
+<br> 
+  <button class="btn" onclick="goToQuiz('quiz26')">
+    Continuer vers le quiz
+  </button>
+
+</div>
+<script src="https://cdn.jsdelivr.net/pyodide/v0.23.4/full/pyodide.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>

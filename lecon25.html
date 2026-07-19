@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leçon 25</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="checkAccess('25')">
+
+<div class="container fade-in">
+
+  <h1>XXV. La fonction input() — Comparaison et booléens</h1>
+
+  <h2>Explication :</h2>
+  <p>
+Il n'existe pas de conversion directe en booléen avec input(). Par contre, on peut comparer ce que l'utilisateur a tapé avec == pour obtenir True ou False.
+<br>
+On combine souvent input() avec une condition if/else pour réagir selon la réponse de l'utilisateur.
+
+<h3>Exemple :</h3>
+    <span style="color: aqua;"> Pour le moment, cette plateforme ne prend pas en charge les programmes utilisant input(). Cela signifie qu’il n’est pas encore possible de saisir des informations au clavier pendant l’exécution d’un programme Python.</span>
+        <br>
+        <br>
+        <!--  Bloc d'un exemple Python -->
+<div class="bloc-code">
+
+    <!-- Zone où l'utilisateur voit/modifie le code -->
+    <textarea class="code">
+# Vérifier si l'utilisateur a tapé 'oui'
+reponse = input("Aimes-tu Python ? (oui/non) : ")
+ 
+aime = (reponse == "oui")   # booléen True ou False
+print(aime)
+ 
+# Utiliser directement avec if
+if reponse == "oui":
+    print("Super, bonne décision !")
+else:
+    print("Tu changeras d'avis bientôt !")
+ 
+# Vérifier si un nombre est correct
+note = int(input("Entrez votre note : "))
+estRecu = (note >= 10)
+print("Admis :", estRecu)
+
+    </textarea>
+
+    
+
+</div>  
+(reponse == "oui") est une comparaison qui vaut True si l'utilisateur a tapé exactement 'oui', et False sinon. Les majuscules comptent : 'Oui' != 'oui'.<br> <br>
+   Cette fonctionnalité sera ajoutée dans une prochaine mise à jour de la plateforme. Merci de votre compréhension !
+   <br>
+<br> 
+  <button class="btn" onclick="goToQuiz('quiz25')">
+    Continuer vers le quiz
+  </button>
+
+</div>
+<script src="https://cdn.jsdelivr.net/pyodide/v0.23.4/full/pyodide.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container fade-in">
+
+  <h1>🧠 Quiz :</h1>
+
+  <!-- =========================
+       QUESTION 1
+  ========================== -->
+  <div class="question">
+
+    <p>1. Que permet de faire range(5) :</p>
+
+    <button onclick="answer(this,false)"> Que permet de faire range(5) : </button>
+    <button onclick="answer(this,false)"> Générer 5 fois le même nombre </button>
+    <button onclick="answer(this,true)"> Générer les nombres de 0 à 4      </button>
+    <button onclick="answer(this,false)"> Créer une liste vide</button>
+
+    <p class="msg"></p>
+
+  </div>
+
+  <!-- =========================
+       QUESTION 2
+  ========================== -->
+  <div class="question">
+
+    <p>2. Quel mot-clé permet de parcourir une liste élément par élément :
+        </p>
+
+    <button onclick="answer(this,false)"> while </button>
+    <button onclick="answer(this,false)">  if </button>
+    <button onclick="answer(this,true)">  range </button>
+    <button onclick="answer(this,false)"> for </button>
+
+    <p class="msg"></p>
+
+  </div>
+  
+  <!-- =========================
+       QUESTION 3
+  ========================== -->
+ 
+   <div class="question">
+
+    <p>3.  Que va afficher ce code : <br> <br>
+        <textarea style="padding: 10px; border: none;">
+for i in range(3):
+    print(i)
+        </textarea>
+</p>
+
+    <button onclick="answer(this,false)"> 1 2 3 </button>
+    <button onclick="answer(this,true)"> 0 1 2 </button>
+    <button onclick="answer(this,false)"> 0 1 2 3 </button>
+    <button onclick="answer(this,false)"> Une erreur </button>
+
+    <p class="msg"></p>
+
+  </div>
+
+  <!-- =========================
+       BOUTON FIN
+  ========================== -->
+  <button onclick="finishQuiz('20')">
+    🎯 Terminer le quiz
+  </button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
