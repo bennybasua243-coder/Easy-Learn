@@ -65,8 +65,11 @@ nav h1{
 
 /* BOUTON MENU (l'icône ☰) */
 .menu-btn{
-  font-size:25px;
+  font-size:20px;
   cursor:pointer;
+  border: none;
+  text-decoration: none;
+  color: #2563eb;
 }
 
 /* SIDEBAR : menu latéral caché par défaut (left:-250px),
@@ -297,24 +300,13 @@ footer{
 <body>
 
 <nav>
-  <div class="menu-btn" onclick="toggleMenu()">
-      ☰
-    </div>
+  
+      <a class="menu-btn" href="CourPython.html">Apprendre Python</a>
+    
   <h1>EasyLearn</h1>
-  <div class="nav-right">   
-  </div>
+  
 </nav>
-<!-- MENU LATÉRAL -->
-<div class="sidebar" id="sidebar">
-  <div class="site-title">Menu</div>
-  
-  <a href="CourPython.html">Apprendre Python</a>
 
-  <a href="https://www.google.com/">Quitter</a>
-  
-</div>
-<!-- OVERLAY -->
-<div class="overlay" id="overlay" onclick="toggleMenu()"></div>
 
 
 
@@ -338,11 +330,11 @@ Apprenez mieux, avancez plus vite, réussissez durablement.
   <div class="card hidden"> Progresser</div>
   <div class="card hidden"> Réussir</div>
 </section>
-
 <section class="cta">
-  <h2> Cliquez sur le menu (☰) <br> en haut à gauche pour choisir et commencer votre cours !</h2>
+  <h2> Cliquez sur Apprendre Python <br> en haut à gauche pour commencer votre cours !</h2>
   
 </section>
+
 <footer>
     &copy Noctis, tout droit reservé
 </footer>
